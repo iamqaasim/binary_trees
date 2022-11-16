@@ -41,7 +41,7 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 		s[depth - 1][offset + left + width / 2] = '.';
 	}
 	return (left + width + right);
-}
+};
 
 /**
  * _height - Measures the height of a binary tree
@@ -58,7 +58,7 @@ static size_t _height(const binary_tree_t *tree)
 	height_l = tree->left ? 1 + _height(tree->left) : 0;
 	height_r = tree->right ? 1 + _height(tree->right) : 0;
 	return (height_l > height_r ? height_l : height_r);
-}
+};
 
 /**
  * binary_tree_print - Prints a binary tree
@@ -96,4 +96,4 @@ void binary_tree_print(const binary_tree_t *tree)
 		free(s[i]);
 	}
 	free(s);
-}
+};
