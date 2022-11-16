@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "../binary_treei.h"
+#include "../binary_trees.h"
 
 /**
  * main - Entry point
